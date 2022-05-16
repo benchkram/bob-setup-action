@@ -8,9 +8,11 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: wget https://github.com/benchkram/bob/releases/download/${{ inputs.version }}/bob_${{ inputs.version }}_linux_amd64
+      run: mkdir -p "${HOME}/bin"
       shell: bash
-    - run: chmod +x bob_${{ inputs.version }}_linux_amd64
+    - run: wget -O "${HOME}/bin/bob" https://github.com/benchkram/bob/releases/download/${{ inputs.version }}/bob_${{ inputs.version }}_linux_amd64
       shell: bash
-    - run: echo $(pwd) >> ${GITHUB_PATH}
+    - run: chmod +x "${HOME}/bin/bob"
+      shell: bash
+    - run: echo "${HOME}/bin" >> $GITHUB_PATH
       shell: bash
