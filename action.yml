@@ -1,0 +1,16 @@
+name: 'Install bob'
+description: 'Installs bob on GitHub Actions for the supported platforms: Linux and macOS.'
+inputs:
+  version:
+    description: 'Release version'
+    required: true
+    default: '0.3.0'
+runs:
+  using: "composite"
+  steps:
+    - run: wget https://github.com/benchkram/bob/releases/download/${{ inputs.version }}/bob_${{ inputs.version }}_linux_amd64
+      shell: bash
+    - run: chmod +x bob_${{ inputs.version }}_linux_amd64
+      shell: bash
+    - run: mv bob_${{ inputs.version }}_linux_amd64 $(go env GOPATH)/bin/bob
+      shell: bash
