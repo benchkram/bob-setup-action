@@ -1,6 +1,6 @@
-# bob-install-action
+# bob-setup-action
 
-Installs [bob](https://bob.build/) on GitHub Actions.
+Setup [bob](https://bob.build/) on GitHub Actions.
 
 ## Features
 
