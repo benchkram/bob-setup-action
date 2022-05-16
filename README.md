@@ -1,6 +1,6 @@
 # install-bob-action
 
-Installs [bob](https://bob.build/) on GitHub Actions for the supported platforms: Linux and macOS.
+Installs [bob](https://bob.build/) on GitHub Actions.
 
 ## Features
 
@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.4.0
-      - uses: benchkram/install-bob-action@v1
+      - uses: benchkram/bob-install-action@v1
         with:
           version: 0.4.0
       - run: bob --version
