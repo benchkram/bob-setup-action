@@ -1,5 +1,5 @@
 name: 'Bob GitHub Action'
-description: 'Setup bob and add it to the PATH''
+description: 'Setup bob and add it to the PATH'
 inputs:
   version:
     description: 'Release version'
