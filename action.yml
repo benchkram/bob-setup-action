@@ -12,5 +12,5 @@ runs:
       shell: bash
     - run: chmod +x bob_${{ inputs.version }}_linux_amd64
       shell: bash
-    - run: mv bob_${{ inputs.version }}_linux_amd64 $(go env GOPATH)/bin/bob
+    - run: mv bob_${{ inputs.version }}_linux_amd64 /usr/local/bin/bob
       shell: bash
