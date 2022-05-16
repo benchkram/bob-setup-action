@@ -1,4 +1,4 @@
-# install-bob-action
+# bob-install-action
 
 Installs [bob](https://bob.build/) on GitHub Actions.
 
