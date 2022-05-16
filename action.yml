@@ -1,5 +1,5 @@
-name: 'Install bob'
-description: 'Installs bob on GitHub Actions for the supported platforms: Linux and macOS.'
+name: 'Bob GitHub Action'
+description: 'Install the bob binary and add it to the PATH''
 inputs:
   version:
     description: 'Release version'
