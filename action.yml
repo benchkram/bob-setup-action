@@ -8,7 +8,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-      run: mkdir -p "${HOME}/bin"
+    - run: mkdir -p "${HOME}/bin"
       shell: bash
     - run: wget -O "${HOME}/bin/bob" https://github.com/benchkram/bob/releases/download/${{ inputs.version }}/bob_${{ inputs.version }}_linux_amd64
       shell: bash
