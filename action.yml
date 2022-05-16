@@ -1,5 +1,8 @@
 name: 'Bob GitHub Action'
 description: 'Setup bob and add it to the PATH'
+branding:
+  icon: 'play'
+  color: 'white'
 inputs:
   version:
     description: 'Release version'
